@@ -1,0 +1,53 @@
+DROP USER hr CASCADE
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+CREATE USER hr IDENTIFIED BY carpeta
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+ALTER USER hr DEFAULT TABLESPACE (21)\db-sample-schemas-21.1/human_resources/hr_analz
+                                 *
+ERROR at line 1:
+ORA-02155: invalid DEFAULT tablespace identifier 
+
+
+ALTER USER hr TEMPORARY TABLESPACE TEMP
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+GRANT CREATE SESSION, CREATE VIEW, ALTER SESSION, CREATE SEQUENCE TO hr
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+GRANT CREATE SYNONYM, CREATE DATABASE LINK, RESOURCE , UNLIMITED TABLESPACE TO hr
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+Conectado.
+
+Concesión terminada correctamente.
+
+ERROR:
+ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada 
+
+
+Advertencia: ¡Ya no está conectado a ORACLE!
+SP2-0640: No conectado
+SP2-0640: No conectado
+SP2-0310: no se ha podido abrir el archivo "C:\Users\josed\Downloads\Nueva.sql"
+SP2-0310: no se ha podido abrir el archivo "C:\Users\josed\Downloads\Nueva.sql"
+SP2-0310: no se ha podido abrir el archivo "C:\Users\josed\Downloads\Nueva.sql"
+SP2-0310: no se ha podido abrir el archivo "C:\Users\josed\Downloads\Nueva.sql"
+SP2-0310: no se ha podido abrir el archivo "C:\Users\josed\Downloads\Nueva.sql"
+SP2-0310: no se ha podido abrir el archivo "C:\Users\josed\Downloads\Nueva.sql"
